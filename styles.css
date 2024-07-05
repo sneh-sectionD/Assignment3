@@ -1,0 +1,135 @@
+/* Basic reset and body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f5af19, #f12711);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 0.3s;
+}
+
+/* Container styling */
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+/* Keyframe for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Header styling */
+h1 {
+    color: #333;
+}
+
+/* Styling for various containers */
+.login-container, .quiz-container, .result-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Input field styling */
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Transition effects */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #555;
+    transform: scale(1.1);
+}
+
+/* Disabled button styling */
+button:disabled {
+    background-color: #888;
+    cursor: not-allowed;
+}
+
+/* Question container styling */
+.question-container {
+    margin: 20px 0;
+    animation: slideIn 0.5s ease-in-out; /* Slide-in animation */
+}
+
+/* Keyframe for slide-in animation */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Progress bar container styling */
+.progress-container {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+/* Progress bar styling */
+.progress-bar {
+    height: 20px;
+    background-color: #333;
+    width: 0;
+    transition: width 0.5s; /* Smooth transition for progress bar */
+}
+
+/* Next button styling */
+.next-button {
+    margin-top: 20px;
+}
+
+/* Result container styling */
+.result-container h2 {
+    color: #333;
+}
+
+/* Result text styling */
+.result-container p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Timer styling */
+.timer {
+    font-size: 1.2em;
+    color: red;
+    margin: 10px 0;
+}
